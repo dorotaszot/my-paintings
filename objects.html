@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="to-top">
 
   <div id="main-nav">
     <ul class="container">
       <li><a href="index.html">Home</a></li>
-      <li><a href="objects.html">Objects</a></li>
+      <li><a href="objects.html" class="current">Objects</a></li>
       <li><a href="places.html">Places</a></li>
       <li><a href="people.html">People</a></li>
       <li><a href="sketches.html">Sketches</a></li>
@@ -29,62 +29,62 @@
   <section class="gallery-block grid-gallery">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/10.jpg">
             <img class="img-fluid image scale-on-hover" src="img/11.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/12.jpg">
             <img class="img-fluid image scale-on-hover" src="img/12.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/14.jpg">
             <img class="img-fluid image scale-on-hover" src="img/14.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/13.jpg">
             <img class="img-fluid image scale-on-hover" src="img/13.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/26.jpg">
             <img class="img-fluid image scale-on-hover" src="img/26.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/34.jpg">
             <img class="img-fluid image scale-on-hover" src="img/34.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/25.jpg">
             <img class="img-fluid image scale-on-hover" src="img/25.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/43.jpg">
             <img class="img-fluid image scale-on-hover" src="img/43.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/16.jpg">
             <img class="img-fluid image scale-on-hover" src="img/16.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/24.jpg">
             <img class="img-fluid image scale-on-hover" src="img/24.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/54.jpg">
             <img class="img-fluid image scale-on-hover" src="img/54.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/55.jpg">
             <img class="img-fluid image scale-on-hover" src="img/55.jpg">
           </a>
@@ -92,10 +92,25 @@
       </div>
     </div>
   </section>
+
+  <a href="#to-top" class="to-top"><i class="fas fa-arrow-up fa-1.5x"></i></a>
+
+  <footer id="main-footer">
+    <p>&copy; Copyright 2020 Dorota Szot</p>
+  </footer>
+
+ 
+  <script src="https://kit.fontawesome.com/a47e3e9825.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
   <script>
     baguetteBox.run('.grid-gallery', { animation: 'slideIn' });
   </script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+   crossorigin="anonymous"></script>
+ <script src="main.js"></script>
+
+  
 </body>
 
 </html>

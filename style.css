@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,6 +9,8 @@ body {
   font-family: 'Roboto', sans-serif;
   /* font-weight: 100; */
   /* color: 	#D3D3D3; */
+  /* color: #152552; */
+
 }
 
 #main-nav {
@@ -16,7 +22,7 @@ width: 100%;
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: auto;
 }
 
@@ -24,20 +30,31 @@ width: 100%;
   display: flex ;
   list-style: none;
   padding: 0;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
   /* position: relative; */
 }
 
-#main-nav ul a {
-  text-decoration: none;
-  color: #152552;
-  padding: 20px;
+/* #main-nav ul li {
   position: relative;
+} */
+
+#main-nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  color: #152552;
+
+  /* Experimenting */
+  display: inline-block;
 }
 
+/* #main-nav ul li {} */
+
 #main-nav ul li a:after {    
-  background: none repeat scroll 0 0 transparent;
+  /* background: none repeat scroll 0 0 transparent; */
   bottom: 10px;
   content: "";
   display: block;
@@ -53,7 +70,7 @@ width: 100%;
   left: 0; 
 }
 
-.current:after {
+/* .current:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 10px;
   content: "";
@@ -63,13 +80,13 @@ width: 100%;
   position: absolute;
   background: #fad566;
   width: 0;
-}
-
-/* #main-nav ul a:hover {
-  background-color: #fad566;
-  padding: 20px;
 } */
 
+.current {
+  font-weight: 800;
+}
+
+/* Home main header */
 #main-header {
   height: 100vh;
   background: url('img/background-2.jpg');
@@ -117,17 +134,12 @@ width: 100%;
   opacity: 1;
 } */
 
-
-.main-nav {
-  background-color: ;
-} 
-
 /* Gallery */
 
 .gallery-block.grid-gallery{
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   padding-top: 60px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .gallery-block.grid-gallery .heading{
@@ -153,12 +165,75 @@ width: 100%;
 .gallery-block.grid-gallery .item{
   margin-bottom: 20px;
 }
-/* custom css */
 
 .image {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+/* About section */
+.about-container {
+
+  /* position: relative; */
+  padding-top: 140px;
+  color: #152552;
+  display: flex;
+  justify-content: center;
+  /* height: 100vh; */
+  /* padding-bottom: 100px; */
+}
+
+.about-picture {
+  position: relative;
+  /* flex-basis: 1; */
+}
+
+.yellow-box {
+  background-color: #fad566;
+  height: 230px;
+  width: 230px;
+}
+
+.about-picture .about-photo {
+  position: absolute;
+  right: -40px;
+  top: 70px;
+}
+
+.about-text {
+  text-align: center;
+  padding: 20px;
+  margin-left: 60px;
+  flex-basis: 1;
+}
+
+
+/* Footer */
+
+#main-footer {
+  position: relative;
+  text-align: center;
+  color: #152552;
+  margin-bottom: 40px;
+  /* background-color: ; */
+}
+
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #152552;
+  border: #fad566 solid 1px;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.to-top:hover {
+  color: #fad566
 }
 
 @media (min-width: 576px) {
@@ -167,4 +242,85 @@ width: 100%;
     transform: scale(1.05);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
   }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-picture {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* position: relative; */
+    
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 200px;
+    /* height: auto; */
+    /* align-items: center; */
+  }
+
+  .yellow-box {
+    position: absolute;
+    /* position: relative; */
+    right: 30%;
+    height: 200px;
+    width: 200px;
+  }
+
+  .about-picture .about-photo {
+    right: 20%;
+    bottom: 300px;
+    top: 0;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+  }
+
+  .about-text {
+    margin: auto;
+  }
+
+@media (max-width: 510px) {
+  #main-nav {
+    position: relative;
+  }
+
+  .gallery-block.grid-gallery{
+    padding-bottom: 30px;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  #main-nav ul {
+    /* display: block; */
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #main-nav ul li a {
+    width: auto;
+    font-size: 16px;
+    margin: 0;
+    padding: 3px;
+  }
+
+  #main-nav ul li a:after {
+    bottom: 0px;
+  }
+
+  #main-nav ul li a:hover:after { 
+    width: 100%; 
+    left: 0;   
+  }
+
+  .main-header-text {
+    position: absolute;
+    top: 40%;
+    left: 20vw
+  }
+
 }

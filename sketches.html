@@ -12,64 +12,64 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="to-top">
 
   <div id="main-nav">
-        <ul class="container">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="objects.html">Objects</a></li>
-          <li><a href="places.html">Places</a></li>
-          <li><a href="people.html">People</a></li>
-          <li><a href="sketches.html">Sketches</a></li>
-          <li><a href="abstracts.html">Abstracts</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
+    <ul class="container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="objects.html">Objects</a></li>
+      <li><a href="places.html">Places</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="sketches.html" class="current">Sketches</a></li>
+      <li><a href="abstracts.html">Abstracts</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
 
   <section class="gallery-block grid-gallery">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/50.jpg">
             <img class="img-fluid image scale-on-hover" src="img/50.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/10.jpg">
             <img class="img-fluid image scale-on-hover" src="img/10.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/60.jpg">
             <img class="img-fluid image scale-on-hover" src="img/60.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/52.jpg">
             <img class="img-fluid image scale-on-hover" src="img/52.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/51.jpg">
             <img class="img-fluid image scale-on-hover" src="img/51.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/manarola.jpg">
             <img class="img-fluid image scale-on-hover" src="img/manarola.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/6.jpg">
             <img class="img-fluid image scale-on-hover" src="img/6.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/40.jpg">
             <img class="img-fluid image scale-on-hover" src="img/40.jpg">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4 item">
+        <div class="col-sm-6 col-lg-4 item">
           <a class="lightbox" href="img/41.jpg">
             <img class="img-fluid image scale-on-hover" src="img/41.jpg">
           </a>
@@ -77,10 +77,23 @@
       </div>
     </div>
   </section>
+
+    <a href="#to-top" class="to-top"><i class="fas fa-arrow-up fa-1.5x"></i></a>
+  
+  <footer id="main-footer">
+    <p>&copy; Copyright 2020 Dorota Szot</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a47e3e9825.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
   <script>
     baguetteBox.run('.grid-gallery', { animation: 'slideIn' });
   </script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+     crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
 </body>
 
 </html>
