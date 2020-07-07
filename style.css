@@ -88,7 +88,7 @@ width: 100%;
 .main-header-text {
   position: absolute;
   top: 20%;
-  left: 20vw
+  left: 20vw;
 }
 
 /* Gallery */
@@ -272,8 +272,10 @@ width: 100%;
 
   .main-header-text {
     position: absolute;
-    top: 40%;
-    left: 20vw
+    top: 60%;
+    left: 10%;
+    align-items: center;
+    justify-content: center;
   }
 
   .about-container {
