@@ -20,6 +20,7 @@ width: 100%;
 .container {
   max-width: 960px;
   margin: auto;
+  margin-top: 10px;
 }
 
 #main-nav ul {
