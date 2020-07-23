@@ -1,7 +1,5 @@
 :root {
-  --primary-color: rgba(55, 78, 139, 0.55);
   --secondary-color: rgb(250, 213, 102);
-  /* --overlay-color: rgba(21, 37, 82, 0.9); */
   --overlay-color: rgba(85, 61, 103, 0.9);
   --menu-speed: 1s;
 }
@@ -39,9 +37,8 @@
   z-index: 1;
   padding: 1rem;
   background: transparent;
-  border: 1px solid #fad566;
+  border: 1px solid var(--secondary-color);
   border-radius: 5px;
-  /* background: var(--primary-color); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +49,7 @@
   position: relative;
   height: 2px;
   width: 100%;
-  background: #fad566;
+  background: var(--secondary-color);
   /* flex: none; */
   display: flex;
   justify-content: center;
@@ -66,7 +63,7 @@
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #fad566;
+  background: var(--secondary-color);
   /* flex: none; */
   top: -10px;
   /* left: 0; */
@@ -99,7 +96,7 @@
 }
 
 .menu-wrap .toggler:checked ~ .menu > div {
-  transform: scale(1);
+  opacity: 1;
   transition-duration: var(--menu-speed);
 }
 
@@ -129,8 +126,7 @@
   height: 200vh;
   width: 200vw;
   border-radius: 50%;
- 
-  transform: scale(0);
+  opacity: 0;
   transition: all .4s ease;
 }
 
